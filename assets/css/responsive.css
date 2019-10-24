@@ -1,0 +1,19 @@
+@media screen and (max-width: 676px) {
+  	.mobMenu { display: block; }
+  	.mobMenu:hover > ul { visibility: visible; opacity: 1; }
+  	.main-menu ul:not(.mobMenu) > li:nth-last-of-type(-n+1) { display: none; }
+  	.main-menu .mobMenu ul li:nth-last-of-type(-n+1) { display: block; }
+}
+@media screen and (max-width: 600px) {
+  	.main-menu ul:not(.mobMenu) > li:nth-last-of-type(-n+2) { display: none; }
+  	.main-menu .mobMenu ul li:nth-last-of-type(-n+2) { display: block; }
+}
+@media screen and (max-width: 470px) {
+  	.main-menu ul:not(.mobMenu) > li:nth-last-of-type(-n+3) { display: none; }
+  	.main-menu .mobMenu ul li:nth-last-of-type(-n+3) { display: block; }
+}
+@media screen and (max-width: 340px) {
+  	.main-menu ul:not(.mobMenu) > li:nth-last-of-type(-n+4) { display: none; }
+  	.main-menu .mobMenu ul li:nth-last-of-type(-n+4) { display: block; }
+}
+

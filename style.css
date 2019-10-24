@@ -1,0 +1,132 @@
+body {
+	background: #fff;
+	color:#000;
+	padding:0;
+	margin:0;
+	font-size: 18px;	
+	font-family: cursive;
+	font-weight: 400;
+	line-height: normal;
+}
+*, *:before, *:after { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box; 
+	-o-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+a {
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out; 
+	-ms-transition: all .5s ease-out; 
+	-o-transition: all .5s ease-out; 
+	transition: all .5s ease-out;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+/*----------------------*/
+/*     Page structure   */
+/*----------------------*/
+#wrapper { overflow: hidden; }
+.container { max-width: 100%; padding: 0 15px; }
+.center-content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*-------------------*/
+/*     Drop Menu     */
+/*-------------------*/
+.header-container {
+	height: 100vh;
+}
+.header {
+	background: #095495;
+}
+.main-menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.main-menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.main-menu ul:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.main-menu ul li {
+	float: left;
+	color: #fff;
+	padding: 15px 20px 18px 20px;
+	cursor: pointer;
+}
+.main-menu ul li:hover {
+	color: #ddd;
+	background: #001f41;
+}
+
+.mobMenu {
+	background: url('assets/images/dot.png') no-repeat center center;
+	cursor: pointer;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out; 
+	-ms-transition: all .5s ease-out; 
+	-o-transition: all .5s ease-out; 
+	transition: all .5s ease-out;
+	display: none;
+	position: relative;
+}
+.mobMenu:hover {
+	background: #001f41 url('assets/images/dot.png') no-repeat center center;
+}
+.mobMenu ul {
+	visibility: hidden;
+	opacity: 0;
+	background: #095495;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 290px;
+	padding-bottom: 15px;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out; 
+	-ms-transition: all .5s ease-out; 
+	-o-transition: all .5s ease-out; 
+	transition: all .5s ease-out;
+}
+.mobMenu ul li {
+	float: none;
+	display: none;
+}
+.mobMenu ul li a {
+	display: block;
+}
+
+
+.main-menu ul li.current{
+	background: #001f41;
+	color: #fff;
+}
+.main-menu .mobMenu ul li.current{
+	background: #001f41;
+	color: #fff;
+}
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+.tab-content.current{
+	display: inherit;
+}
